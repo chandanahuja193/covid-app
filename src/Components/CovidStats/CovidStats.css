@@ -1,0 +1,14 @@
+.barChart{
+  width: 51em ;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.xAxisStyle, .yAxisStyle {
+  font-size: 1em;
+  font-weight: 300;
+  color: rgba(0,0,0,0.9);
+}

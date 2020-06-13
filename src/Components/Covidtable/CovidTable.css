@@ -1,0 +1,10 @@
+.ant-table-container table > thead > tr{
+  font-size: 1.2em; 
+}
+
+.ant-table-title{
+  font-size: 1.2em; 
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+}

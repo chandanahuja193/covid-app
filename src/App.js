@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Header from "./Components/Header/Header";
+import CovidStats from "./Components/CovidStats/CovidStats";
 
 function App() {
+  const [ value , setValue ] = useState('barChart')
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header  value={value} setValue={setValue} />
+      <CovidStats value={value} setValue={setValue}/>
     </div>
   );
 }
